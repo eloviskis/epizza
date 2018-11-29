@@ -20,7 +20,7 @@ class Sistema
     
 	public function __construct()
 	{
-		$this->api_url = '';
+		$this->api_url = 'api_url';
 		$this->setUrl();
 		$this->setExploder();
 		$this->setParameter();
