@@ -34,8 +34,6 @@ class Login
 	{
 		if($this->setCredecials()){
 			
-			
-			$this->sys->api_url = "http://api.epizzaonline.com.br/";
 			$this->sys->user_email = $this->user_email;
 		    $this->sys->user_pass  = $this->user_pass;
 			

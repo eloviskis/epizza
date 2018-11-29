@@ -1,6 +1,5 @@
 <?php
 namespace App\Sistema;
-
 class Sistema
 {
 	private $url;
@@ -17,10 +16,12 @@ class Sistema
     private $headers;
 	private $parameters = false;
 	public $data;
+	public $config;
     
 	public function __construct()
 	{
-		$this->api_url = 'api_url';
+		$this->config = new Config;
+		$this->api_url = $this->config->getConfig()['Api_url'];
 		$this->setUrl();
 		$this->setExploder();
 		$this->setParameter();
